@@ -14,9 +14,9 @@
     <hr>
     <h2>Uso de *ngFor para productos</h2>
       <p>en este caso estoy utilizando un array de objetos para poder iterar con cada uno de ellos haciendo uso de la directiva *ngfor y *ngIf</p>
-      <div>
+      <div class="products--grid">
         <div *ngFor="let product of products; index as i">
-          <img [src]="product.image" alt="imagen Producto" width="100">
+          <img [src]="product.image" alt="imagen Producto">
           <h3>{{product.name}}</h3>
           <p>Q{{product.price}}.00</p>
         </div>
@@ -66,7 +66,7 @@
       <p>El property bindin permite tomar ciertas propiedades de los elementos html y cambiarlos desde el app.component.ts del componente</p>
       <em>ejemplo</em>
       <br>
-      <img [src]="img" alt="imgen de perro">
+      <img [src]="img" alt="imgen de perro" width="250">
       <em>ejemplo dos</em><br>
       <p>nombre es tomado desde el component.ts</p>
       <input type="text" [value]="name">
