@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  widthImage= 25;
   products:any=[
     {
       name:'Producto Uno',

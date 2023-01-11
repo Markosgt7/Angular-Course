@@ -5,8 +5,17 @@
     <p class="message-error" [class.active]="nameInput2.invalid">El campo es requerido</p>
     <h3>Style</h3>
     <input type="text" required #nameInput3="ngModel" [(ngModel)]="person.name">
-    <p [style.font-style]="nameInput3.invalid ? 'italic': 'normal'"> El campo es requerido</p>
+    <p [style.font-style]="nameInput3.invalid ? 'italic': 'normal'"> El campo es requerido </p>
+    <h3>Styles con valores en px, %,</h3>
+    <div class="mio">
+      <div>
+        <input type="text" [(ngModel)]="widthImage">
+        </div>
+        <div>
+          <img [src]="img" alt="imgen de perro" [style.width.%]="widthImage">
 
+        </div>
+      </div>
 
     <hr>
     <h2>Uso de ngSwitch</h2>
