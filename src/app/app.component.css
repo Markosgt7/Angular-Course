@@ -23,3 +23,13 @@
         grid-gap: 15px;
     }
 }
+.message-error{
+    background-color: red;
+    color: white;
+    opacity: 0;
+    transition: all linear 0.5s;
+}
+.active{
+    transition: all linear 0.5s;
+    opacity: 1;
+}

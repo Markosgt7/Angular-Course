@@ -1,5 +1,14 @@
 <body>
-  <h1>Mis pruebas</h1>
+  <h1>Mis pruebas</h1><hr>
+    <h2>Class & Style</h2>
+    <input type="text" required #nameInput2="ngModel" [(ngModel)]="person.name">
+    <p class="message-error" [class.active]="nameInput2.invalid">El campo es requerido</p>
+    <h3>Style</h3>
+    <input type="text" required #nameInput3="ngModel" [(ngModel)]="person.name">
+    <p [style.font-style]="nameInput3.invalid ? 'italic': 'normal'"> El campo es requerido</p>
+
+
+    <hr>
     <h2>Uso de ngSwitch</h2>
       <input type="text" [(ngModel)]="person.name"/>
       <div [ngSwitch]="person.name">
