@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  register = {
+    name: '',
+    email:'',
+    password: ''
+  }
   box={
     width:100,
     height:100,
@@ -74,5 +79,8 @@ export class AppComponent {
   delete(i: number){
     this.emojis.splice(i,1);
     
+  }
+  onRegister(){
+    console.log(this.register);
   }
 }
