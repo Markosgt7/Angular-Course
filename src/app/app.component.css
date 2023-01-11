@@ -33,3 +33,12 @@
     transition: all linear 0.5s;
     opacity: 1;
 }
+
+.valid{
+    border-color: red;
+    border-style: solid;
+}
+.invalid{
+    border-color: greenyellow;
+    border-style:dashed;
+}

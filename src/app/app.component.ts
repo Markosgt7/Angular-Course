@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  box={
+    width:100,
+    height:100,
+    background: 'red'
+  }
   widthImage= 25;
   products:any=[
     {
